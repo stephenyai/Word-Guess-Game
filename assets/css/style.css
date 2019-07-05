@@ -1,0 +1,49 @@
+body {
+	background-color: #f2f6f5;
+}
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	color: #63707e;
+	padding: 10px;
+}
+
+span {
+	border-bottom: 2px solid gray;
+}
+
+
+.hide {
+	visibility: hidden;
+}
+
+.start {
+	text-align: center;
+	margin: 20px auto;
+	color: #93b5b3;
+}
+
+.main {
+	width: 960px;
+	margin: 25px auto;
+	padding: 10px;
+	border: 1px dashed #c8dad3;
+}
+
+.guess {
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+
+.gameInfo {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 85px;
+}
+
+#wordPlace {
+	font-size: 30px;
+	letter-spacing: 15px;
+}
