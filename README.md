@@ -1,2 +1,4 @@
 # Word-Guess-Game
-Hangman 
+## Hangry-man 
+
+__Using **HTML**, **CSS**, and **Javascript** to make Hangman game__
