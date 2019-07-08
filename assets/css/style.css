@@ -7,10 +7,25 @@ h1 {
 	font-size: 75px;
 	color: #63707e;
 	padding: 10px;
+	font-family: 'Barriecito', cursive;
 }
 
 span {
 	border-bottom: 2px solid gray;
+}
+
+p, h3 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+}
+
+img {
+	margin-top: 30px;
+	margin-left: 150px;
+	width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
 }
 
 
@@ -20,7 +35,7 @@ span {
 
 .start {
 	text-align: center;
-	margin: 20px auto;
+	margin: 40px auto;
 	color: #93b5b3;
 }
 
@@ -40,6 +55,7 @@ span {
 .gameInfo {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	margin-top: 85px;
 }
 
@@ -47,3 +63,9 @@ span {
 	font-size: 30px;
 	letter-spacing: 15px;
 }
+
+#lettersGuessed {
+	letter-spacing: 5px;
+
+}
+
