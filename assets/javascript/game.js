@@ -1,4 +1,4 @@
-var foodWords = ['sushi', 'hamburger', 'pasta', 'pizza', 'chocolate', 'pineapple', 'ramen', 'kelp', 'bread', 'burrito', 'croissant', 'gouda', 'flauta', 'rice'];
+var foodWords = ['sushi', 'hamburger', 'pasta', 'pizza', 'chocolate', 'pineapple', 'ramen', 'kelp', 'bread', 'burrito', 'croissant', 'cheese', 'flauta', 'rice', 'strawberries', 'udon'];
 
 var randomWord;
 var maxTries = 12;
@@ -14,6 +14,8 @@ var start = document.querySelector('.start');
 var winTotal = document.querySelector('#totalMeals');
 var guessesLeft = document.querySelector('#guessesLeft');
 var wrongLetters = document.querySelector('#lettersGuessed')
+var photos = document.querySelector('.photos');
+var winPhoto = document.querySelector('#win');
 
 function defaultPage() {
 
@@ -29,15 +31,19 @@ function defaultPage() {
 	winTotal.innerText = totalWins;
 	wrongLetters.innerText = lettersGuessed;
 
+	winPhoto.style.cssText= "display: none";
+	photos.style.cssText= "display: flex";
+	start.innerText = "Press any key to get started!"
+
 	randomWord = foodWords[Math.floor(Math.random() * foodWords.length)];
 
 	for (var i=0; i<randomWord.length; i++) {
 			newStr += "_";
 	}
+
 	wordString.innerText = newStr;
 
 	display();
-
 }
 
 function display() {
@@ -46,7 +52,8 @@ function display() {
 
 	if (numGuesses<=0) {
 		endGame = true;
-		wordString.innerText = "No food for you. Press any key to play again.";
+		start.classList.remove('hide');	
+		start.innerText = "No donut for you. Press any key to play again."
 	}
 }
 
@@ -95,8 +102,12 @@ function noDuplicate() {
 
 function winCheck() {
 	if (newStr === randomWord) {
-		wordString.innerText = "You get your donut!";
+		start.classList.remove('hide');	
+		start.innerText = "You get your donut! Press any key to play again.";
 		totalWins++;
+		winPhoto.style.cssText= "display: block";
+		photos.style.cssText= "display: none";
+
 		endGame = true;
 	}
 }

@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Barriecito|Indie+Flower&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
 		<h1>HANGRY-MAN</h1>
 	</header>
 
-	<p class="start">Press any key to get started!</p>
+	<p class="start animated infinite pulse">Press any key to get started!</p>
 
 	<div class="main">
 
@@ -35,9 +37,22 @@
 		</div>
 	</div>
 
-	<div>
-		<img src="assets/images/homer.png" alt="Homer J Simpson">
+	<div class="photos">
+		<div>
+			<img id="homer" src="assets/images/homer.png" alt="Homer J Simpson">
+		</div>
+
+		<div>
+			<img id="donut" src="assets/images/donut.png" alt="donut">
+		</div>
 	</div>
+
+	<div class="winFlex">
+		<div>	
+			<img id="win" src="assets/images/homer_eats.png" alt="winner">
+		</div>		
+	</div>
+
 	<script src="assets/javascript/game.js"></script>
 </body>
 </html>
